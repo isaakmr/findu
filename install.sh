@@ -19,17 +19,17 @@ debian_install() {
     echo -e '=====================\nINSTALLING FOR DEBIAN\n=====================\n' > "$ILOG"
 
     echo -ne 'Python3\r'
-    apk -y add python3 python3-pip &>> "$ILOG"
+    apk  add python3 python3-pip &>> "$ILOG"
     status_check Python3
     echo -e '\n--------------------\n' >> "$ILOG"
 
     echo -ne 'PIP\r'
-    apk -y add python3-pip &>> "$ILOG"
+    apk  add python3-pip &>> "$ILOG"
     status_check Pip
     echo -e '\n--------------------\n' >> "$ILOG"
 
     echo -ne 'PHP\r'
-    apk -y add php &>> "$ILOG"
+    apk  add php &>> "$ILOG"
     status_check PHP
     echo -e '\n--------------------\n' >> "$ILOG"
 }
